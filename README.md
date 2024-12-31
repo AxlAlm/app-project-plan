@@ -22,7 +22,7 @@ To create a reusable and contained environment for our front- and backend we wil
         4. when running `docker compose down` we tear down both containers
 
 
-Lets now create a "User Registrating Flow" and make that work locally! User will click a "Register" button, be taken to a register page where they will fill out a simple form and then submit, this form will be sent to a backend endpoint which will take the request and then reject returning[ Not Implemented Yet status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/501), webpage will display the error and do nothing more. I.e. we will setup a half-functioning registration flow as the absolute minimal functionality of our application.
+Lets now create a "User Registrating Flow" and make that work locally! User will click a "Register" button, be taken to a register page where they will fill out a simple form and then submit, this form will be sent to a backend endpoint which will take the request and then reject returning[ Not Implemented Yet status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/501), webpage will display the error and do nothing more. I.e. we will setup a none-functioning registration flow as the absolute minimal functionality of our application.
 
 
 ### Step 2: CI
