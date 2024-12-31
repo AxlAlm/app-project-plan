@@ -35,12 +35,18 @@ Our workflow in github for new features will be to make a Pull Request, review i
 
 Configure a github action that runs unit tests on any push to a PR and make a rule in github that require PR to have all checks passed before merging is allowed.
 
-(Optional extenstion: running linting and code formatting in CI as well. Its very command that linting and formatting checks are run in CI as well. Linting is to check the code for suspicious or unwanted usage that could or will lead to errors, and formatting ensures that all developers code look the same.
+(Optional extenstion: running linting and code formatting in CI as well. Its very command that linting and formatting checks are run in CI as well. Linting is to check the code for suspicious or unwanted usage that could or will lead to errors, and formatting ensures that all developers code look the same.)
 
 
 ### step 3: CD
 
-Now we are going to setup some more github actions to deploy our application.
+Now we are going to setup some more github actions to deploy our application! Deplyoment of webapps can be very simple if one uses e.g. https://www.heroku.com/, https://render.com/ and https://fly.io/. But for the purpose of learing we will only be the absolute cheapest EC2 instance to host our stuff.
+
+First, create an AWS account.
+
+Then, lets pick a Infastructure as Code (IaC) tool to help us provising our resources! Suggestion is to use Terraform. For starters we need to configure terraform and then use it to create an instance of the cheapest EC2 for us!
+
+If we are to host our application on a EC2 we need to setup some security, our own domain and probably some load balancing for good measure. 
 
 
 
