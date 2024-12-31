@@ -40,19 +40,15 @@ Configure a github action that runs unit tests on any push to a PR and make a ru
 
 ### step 3: CD
 
-Now we are going to setup some more github actions to deploy our application! Deplyoment of webapps can be very simple if one uses e.g. https://www.heroku.com/, https://render.com/ and https://fly.io/. But for the purpose of learing we will only be the absolute cheapest EC2 instance to host our stuff.
+Now we are going to setup some more github actions to deploy our application!
 
-First, create an AWS account.
+Web apps can be deployed and hosted in A LOT of different ways. One can use modern alternatives like https://www.heroku.com/, https://render.com/ and https://fly.io/ which makes deployment supereasy. One can use Kubernetes, which is a commonly used tool, or serverless which is growing. One can use differnt cloud plafroms and various Infrasttructure as Code (IaC) tools. The solutions are plenty, all with various pros and cons... But for the purpose of learning and making things simple, we will use Terraform as IaC to setup our infrastructure, we will host our application on the cheapest EC2 instance, we run our appplication using docker (docker compose), we will store our docker images in AWS elastic container register and use AWS Route 53 to setup domain/DNS.
 
-Then, lets pick a Infastructure as Code (IaC) tool to help us provising our resources! Suggestion is to use Terraform. For starters we need to configure terraform and then use it to create an instance of the cheapest EC2 for us!
+This setup will be somewhat naive, but it will cost next to nothing and work just fine!
 
-EC2 has a public IP which anyone can reach, lets start by having our application accessible via that URL!
+Lets deal with Database later!
 
-TBA
 
-1. need Elastic Container Register to store our docker containres
-2. we docker on EC2
-3. we need to deploy new docker containers, hence we need to run some commands on the ecs maybe using https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html
 
 
 
