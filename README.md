@@ -46,7 +46,18 @@ First, create an AWS account.
 
 Then, lets pick a Infastructure as Code (IaC) tool to help us provising our resources! Suggestion is to use Terraform. For starters we need to configure terraform and then use it to create an instance of the cheapest EC2 for us!
 
-If we are to host our application on a EC2 we need to setup some security, our own domain and probably some load balancing for good measure. 
+EC2 has a public IP which anyone can reach, lets start by having our application accessible via that URL!
+
+TBA
+
+1. need Elastic Container Register to store our docker containres
+2. we docker on EC2
+3. we need to deploy new docker containers, hence we need to run some commands on the ecs maybe using https://docs.aws.amazon.com/cli/latest/reference/ssm/send-command.html
+
+
+
+
+
 
 
 
